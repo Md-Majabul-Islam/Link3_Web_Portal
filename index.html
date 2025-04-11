@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Link3 Portal made by Majabul Islam</title>
+  <title>Link3 Portal Developed By Majabul Islam</title>
 
   <!-- Bootstrap 5 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
@@ -75,22 +75,24 @@
   <!-- Login Section -->
   <div class="container mt-5" id="login-section">
     <div class="text-center mb-4">
-      <h1>Welcome to Link3 Web Portal</h1><br>
-      <h4>Made by Majabul Islam</h4>
-      <h6>Support Engineer, NMC Team</h6><br><br>
+      <h1>Welcome to Link3 Monitoring Dashboard</h1><br><br>
     </div>
     <div id="login-card" class="card p-4 shadow-sm">
       <input type="email" id="email" class="form-control mb-3" placeholder="Email">
       <input type="password" id="password" class="form-control mb-3" placeholder="Password">
       <button class="btn btn-primary w-100" onclick="login()">Login</button>
     </div>
+    <div class="text-center mb-4">
+        <br><br><br><h4>Developed By Majabul Islam</h4>
+        <h6>Support Engineer, NMC Team</h6><br><br>
+      </div>
   </div>
 
   <!-- Department Section -->
   <div class="container mt-5" id="department-section" style="display: none;">
     <div class="row g-4 justify-content-center">
       <div class="col-md-12 text-center mb-4">
-        <h4>Welcome to NMS Portal</h4>
+        <h4>Welcome to Monitoring Dashboard</h4>
       </div>
 
       <!-- NMC Dropdown Section -->
@@ -127,10 +129,13 @@
           <a href="https://cportal.fiberathome.net/cportal/">F@H Portal</a>
         </li>
         <li class="list-group-item">
+            <a href="https://portal.radiantbd.com/">Radiant Portal</a>
+        </li>
+        <li class="list-group-item">
           <a href="http://172.31.169.169/">Live TV</a>
         </li>
         <li class="list-group-item">
-          <a href="https://accounts.google.com/v3/signin/identifier">Gmail</a>
+          <a href="https://mail.google.com/">Gmail</a>
         </li>
         <li class="list-group-item">
           <a href="https://100.64.174.2:31943">NCE-IP</a>
@@ -147,57 +152,191 @@
         <li class="list-group-item">
           <a href="http://10.10.191.22/digilink3/">Call flow Dashboard</a>
         </li>
+        <li class="list-group-item">
+            <a href="http://monitor.dhaka.link3.net/">Observium Dhaka</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://monitor.ctg.link3.net/">Observium CTG</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://monitor.khulna.link3.net/">Observium Khulna</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://monitor.bogra.link3.net/">Observium Bogra</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://monitor.sylhet.link3.net/">Observium Sylhet</a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://fol.link3.net/nagios/">Nagios</a>
+        </li>
       </ul>
     </div>
   </div>
 </div>
 
-      <!-- BNOC Block -->
-      <div class="col-md-4" id="bnoc-block" style="display: none;">
-        <div class="card p-3 shadow-sm">
-          <h5 class="text-center">BNOC</h5>
-          <ul class="list-group">
-            <li class="list-group-item">WhatsUp Gold</li>
-            <li class="list-group-item">Solarwinds</li>
-            <li class="list-group-item">MIS</li>
-            <li class="list-group-item">Outlook</li>
-            <li class="list-group-item">Cacti</li>
-          </ul>
-        </div>
-      </div>
 
-      <!-- NGNC Block -->
-      <div class="col-md-4" id="ngnc-block" style="display: none;">
-        <div class="card p-3 shadow-sm">
-          <h5 class="text-center">NGNC</h5>
-          <ul class="list-group">
-            <li class="list-group-item">WhatsUp Gold</li>
-            <li class="list-group-item">Solarwinds</li>
-            <li class="list-group-item">MIS</li>
-            <li class="list-group-item">Outlook</li>
-            <li class="list-group-item">Cacti</li>
-          </ul>
-        </div>
+
+<!---------------------- BNOC Dropdown Section -------------------->
+<div class="col-md-4 text-center" id="bnoc-block" style="display: none;">
+    <div class="card p-3 shadow-sm">
+      <button class="btn btn-success w-100 mb-3" data-bs-toggle="collapse" data-bs-target="#bnocDropdown" aria-expanded="false" aria-controls="bnocDropdown">
+        BNOC Tools <i class="fas fa-caret-down ms-2"></i>
+      </button>
+  
+      <div class="collapse" id="bnocDropdown">
+        <ul class="list-group">
+          <li class="list-group-item">
+              <a href="http://monitor.dhaka.link3.net/">Observium Dhaka</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.ctg.link3.net/">Observium CTG</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.khulna.link3.net/">Observium Khulna</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.bogra.link3.net/">Observium Bogra</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.sylhet.link3.net/">Observium Sylhet</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://netflow.link3.net:5601/">Elastic Netflow</a>
+          </li>
+          <li class="list-group-item">
+            <a href="http://203.76.113.202:5601/login?next=%2F">Elastic Syslog</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://203.76.96.135:81/">FastnetMon</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://123.200.0.199:8086/emsWebServer/uc/login?">VSOL NMS Linux Cloud NMS</a>
+        </li>
+        <li class="list-group-item">
+            <a href="203.76.96.166">BRAS Backup FTP (WinSCP)</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://10.49.15.5/index.htm">PRTG BNOC</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://123.200.0.168:3000/">Mikrotik Dashboard</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://203.76.96.183:3000/">Mikrotik Dashboard DST</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://traffic.link3.net/">Cacti (Infra)</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://203.76.96.164/cacti/">Cacti (WeatherMap)</a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://10.250.15.2:31943/unisso/login.action?service=%2Funisess%2Fv1%2Fauth%3Fservice%3D%252Fncecommonwebsite%252Fv1%252Fnewportal%252Fportal%252Floading%252Floading.html&decision=1">iMaster NCE</a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://10.49.38.35/Orion/Login.aspx?ReturnUrl=%2f">Solarwinds</a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://203.76.102.232:3000/auth/login?redirect=/logs">Polygon Log Server</a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://10.250.15.2:31943">Huawei NCE-FAN</a>
+        </li>
+        </ul>
       </div>
     </div>
   </div>
-
-  <!----------- Footer ----------->
-  
-            
-          
-
-
-  
   
 
+  <!---------------- NGNC Dropdown Section ------------------------->
+  <div class="col-md-4 text-center" id="ngnc-block" style="display: none;">
+    <div class="card p-3 shadow-sm">
+      <button class="btn btn-success w-100 mb-3" data-bs-toggle="collapse" data-bs-target="#ngncDropdown" aria-expanded="false" aria-controls="ngncDropdown">
+        NGNC Tools <i class="fas fa-caret-down ms-2"></i>
+      </button>
+  
+      <div class="collapse" id="ngncDropdown">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="http://nms.link3.net:4343/NmConsole/CoreNm/User/BrowserCheck/BrowserCheck.asp?sBtf=bt">WhatsUp Gold</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://10.49.38.35/Orion/SummaryView.aspx?ViewID=282">Solarwinds</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://office.link3.net/login">MIS</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://mailweb.link3.net/owa/#path=/mail">Outlook</a>
+          </li>
+          <li class="list-group-item">
+            <a href="http://103.9.105.5/cacti/ ">Cacti</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://sms.link3.net/auth/login">SMS Management System</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://client-ticketing.summitcommunications.net/login">SCL Portal</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://cportal.fiberathome.net/cportal/">F@H Portal</a>
+          </li>
+          <li class="list-group-item">
+              <a href="https://portal.radiantbd.com/">Radiant Portal</a>
+          </li>
+          <li class="list-group-item">
+            <a href="http://172.31.169.169/">Live TV</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://mail.google.com/">Gmail</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://100.64.174.2:31943">NCE-IP</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://10.20.101.163:8000/">Corero</a>
+          </li>
+          <li class="list-group-item">
+            <a href="http://203.76.96.135:81/d/sqJNdgdVz/fastnetmon">FastnetMon</a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://support.nexusguard.com/#/home">Nexusguard</a>
+          </li>
+          <li class="list-group-item">
+            <a href="http://10.10.191.22/digilink3/">Call flow Dashboard</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.dhaka.link3.net/">Observium Dhaka</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.ctg.link3.net/">Observium CTG</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.khulna.link3.net/">Observium Khulna</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.bogra.link3.net/">Observium Bogra</a>
+          </li>
+          <li class="list-group-item">
+              <a href="http://monitor.sylhet.link3.net/">Observium Sylhet</a>
+          </li>
+          <li class="list-group-item">
+              <a href="https://fol.link3.net/nagios/">Nagios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
 
-  <!-- Login Script -->
+
+  <!------------------------- Login Script ------------------------>
   <script>
     const users = {
-      "nmc@link3.net": { password: "nmc", department: "NMC" },
-      "bnoc@link3.net": { password: "bnoc", department: "BNOC" },
-      "ngnc@link3.net": { password: "ngnc", department: "NGNC" },
+      "nmc@link3.net": { password: "nmc123", department: "NMC" },
+      "bnoc@link3.net": { password: "bnoc123", department: "BNOC" },
+      "ngnc@link3.net": { password: "ngnc123", department: "NGNC" },
     };
 
     function login() {
@@ -227,5 +366,67 @@
     document.getElementById("lastUpdated").textContent = new Date().toLocaleDateString();
   </script>
 
+
+
+<!--------------------- Logout Button ------------------------------------->
+<div class="container text-center mt-4" id="logout-section" style="display: none;">
+    <button class="btn btn-danger" onclick="logout()">Logout</button>
+  </div>
+  
+  <script>
+    function login() {
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+  
+      if (users[email] && users[email].password === password) {
+        const dept = users[email].department;
+        document.getElementById('login-section').style.display = 'none';
+        document.getElementById('department-section').style.display = 'block';
+        document.getElementById('logout-section').style.display = 'block'; // Show logout button
+  
+        if (dept === 'NMC') {
+          document.getElementById('nmc-block').style.display = 'block';
+        } else if (dept === 'BNOC') {
+          document.getElementById('bnoc-block').style.display = 'block';
+        } else if (dept === 'NGNC') {
+          document.getElementById('ngnc-block').style.display = 'block';
+        }
+      } else {
+        alert("❌ Invalid email or password!");
+      }
+    }
+  
+    function logout() {
+      document.getElementById('login-section').style.display = 'block';
+      document.getElementById('department-section').style.display = 'none';
+      document.getElementById('logout-section').style.display = 'none';
+      document.getElementById('email').value = '';
+      document.getElementById('password').value = '';
+    }
+  </script>
+  
+
+
+<!------------------- Go Back Button ------------------------->
+<div class="text-center mt-3">
+    <button class="btn btn-secondary" onclick="goBack()">⬅ Go Back</button>
+</div>
+
+<script>
+    function goBack() {
+      document.getElementById('login-section').style.display = 'block';
+      document.getElementById('department-section').style.display = 'none';
+      document.getElementById('nmc-block').style.display = 'none';
+      document.getElementById('bnoc-block').style.display = 'none';
+      document.getElementById('ngnc-block').style.display = 'none';
+    }
+  </script>
+   
+
 </body>
+
+
+ <!--------------------------- Footer --------------------------->
+
+
 </html>
