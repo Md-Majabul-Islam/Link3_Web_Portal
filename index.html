@@ -334,9 +334,9 @@
   <!------------------------- Login Script ------------------------>
   <script>
     const users = {
-      "nmc@link3.net": { password: "nmc123", department: "NMC" },
-      "bnoc@link3.net": { password: "bnoc123", department: "BNOC" },
-      "ngnc@link3.net": { password: "ngnc123", department: "NGNC" },
+      "nmc@link3.net": { password: "nmc", department: "NMC" },
+      "bnoc@link3.net": { password: "bnoc", department: "BNOC" },
+      "ngnc@link3.net": { password: "ngnc", department: "NGNC" },
     };
 
     function login() {
@@ -406,23 +406,7 @@
   </script>
   
 
-
-<!------------------- Go Back Button ------------------------->
-<div class="text-center mt-3">
-    <button class="btn btn-secondary" onclick="goBack()">⬅ Go Back</button>
-</div>
-
-<script>
-    function goBack() {
-      document.getElementById('login-section').style.display = 'block';
-      document.getElementById('department-section').style.display = 'none';
-      document.getElementById('nmc-block').style.display = 'none';
-      document.getElementById('bnoc-block').style.display = 'none';
-      document.getElementById('ngnc-block').style.display = 'none';
-    }
-  </script>
    
-
 </body>
 
 
